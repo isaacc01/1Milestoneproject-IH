@@ -1,0 +1,19 @@
+
+.navbar {
+    border: 6px salmon;
+    width: 95%;
+    flex: auto;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body {
+    background-image: url("img_tree.gif");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
