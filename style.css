@@ -2,48 +2,83 @@
 body {
     background-image: url( ./Assets/Images/charles-postiaux-i9Kfzb9idZo-unsplash.jpg);
     background-size: cover;
-}
-
-.flexbox-container {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.flexbox-item {
-    width: 800px;
-    margin: 10px;
-    background-color: #00ffff00;
-    flex-direction: column;
-}
-
-.flexbox-item-1 {
-    min-height: 100px;
-    border: 3px solid #333;
-    display: inline-block;
-}
-
-.flexbox-item-2 {
-    min-height: 100px;
-    border: 3px solid #333;
-}
-
-.flexbox-item-3 {
-    min-height: 100px;
-}
-
-.flexbox-item-4 {
-    min-height: 500px;
+    margin: 0;
 }
 
 .navbar {
     border: 6px salmon;
     width: 95%;
-    flex: auto;
+    flex: 1;
     margin: auto;
     text-align: center;
     align-content: center;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: yellow;
+    margin: 10px;
+    font-size: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    color: yellow;
+}
+
+.directions {
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    color: yellow;
+    font-size: 20px;
+}
+
+.directions ul li{
+    text-align: left;
+    list-style: none;
+    text text-decoration: none;
+}
+
+#gameboard{
+    display: grid;
+    box-shadow: 5px 5px 5px 5px red;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    position: relative;
+    border: 10px solid yellow;
+    text-align: center;
+    background-position: center;
+    background-size: 100%;
+    height: 500px;
+    width: 500px;
+    background-image: url(./Assets/Images/pexels-laker-6157027.jpg);
+
+}
+
+footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: yellow;
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
