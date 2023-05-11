@@ -67,6 +67,7 @@ nav ul li a{
 /*create the grid*/
 
 #gameboard{
+    background-image: url(./Assets/Images/pexels-laker-6157027.jpg);
     display: grid;
     box-shadow: 5px 5px 5px 5px red;
     grid-template-columns: repeat(25, 1fr);
@@ -82,6 +83,28 @@ nav ul li a{
     background-size: 100%;
     height: 500px;
     width: 500px;
+}
+
+/*#gameboard{
+    background-image: url('img/ivan-bandura-n7NxVeTvTag-unsplash.jpg');
+    background-size: 100%;
+    background-position: center;
+    height: 500px;
+    width: 500px ;
+    text-align: center;
+    border:10px solid #e7cd93;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    margin-top: 4px;    
+    display: grid;
+    box-shadow: 5px 5px 5px 5px #595953;
+    /* this assigning grid to display will create it to be like a grid
+    and below is the dimensions, 25 by 25 frames*/
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(25, 1fr);
 }
 
 
@@ -144,15 +167,6 @@ footer{
 
 *add css to our body*/
 
-
-
-.snake-logo{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 10px;
-    background-image: url();
-}
 
 
 #gameboard{
