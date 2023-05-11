@@ -9,7 +9,7 @@ body {
 }
 
 .navbar{
-    border: 2px solid #e7cd93;
+    border: 6px solid salmon;
     width: 95%;
     flex: 1;
     margin: auto;
@@ -19,19 +19,6 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
-
-
-/*.navbar {
-    border: 6px salmon;
-    width: 95%;
-    flex: 1;
-    margin: auto;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-}*/
 
 nav ul li{
     list-style: none;
@@ -39,14 +26,19 @@ nav ul li{
     text-decoration: none;
     color: yellow;
     margin: 10px;
-    font-size: 50px;
+    font-size: 25px;
+}
+
+nav ul li a:hover{
+    color: blue;
+    
 }
 
 nav ul li a{
     text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
     color: yellow;
+    font-size: 25px;
+    display: inline-block;
 }
 
 .directions {
@@ -61,10 +53,15 @@ nav ul li a{
     font-size: 20px;
 }
 
-.directions ul li{
+
+.directions ul li {
     text-align: left;
-    list-style: none;
     text-decoration: none;
+    color: yellow;
+    list-style: none;
+    margin: 5px;
+    font-size: 20px;
+
 }
 
 /*create the grid*/
@@ -143,53 +140,18 @@ footer{
 
 
 
+
+
 *add css to our body*/
-/*body{
-    background-color: #90b18e;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-} */
 
 
-.navbar{
-    border: 2px solid #e7cd93;
-    width: 90%;
-    flex: 1;
-    margin: auto;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    text-decoration: none;
-    color: #e7cd93;
-    margin: 10px;
-    font-size: 25px;
-
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #e7cd93;
-    font-size: 25px;
-}
-
-nav ul li a:hover{
-    color: blue;
-    
-}
 
 .snake-logo{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     padding: 10px;
+    background-image: url();
 }
 
 
@@ -268,13 +230,4 @@ footer{
 }
 .directions ul{
     width: auto;
-}
-.directions ul li {
-    text-align: left;
-    text-decoration: none;
-    color: black;
-    list-style: none;
-    margin: 5px;
-    font-size: 15px;
-
 }
