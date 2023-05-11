@@ -47,7 +47,7 @@ function gamePlay() {
     snakePosition = [{ x: 5, y: 6 }];
     score = 0;
     }
-//add a if statemtn for when the snake eats the food to update the score
+//add a if statement for when the snake eats the food to update the score
 //and update thr snake length
     if (snakePosition[0].y === foodBait.y && snakePosition[0].x === foodBait.x) {
        score += 1;

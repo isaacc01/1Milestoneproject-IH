@@ -5,51 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Hungry Vegan Dragon</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Create a nav bar to be able to control game, reset game, see score-->
     <div class="background-image"></div>
-        <div class="navbar">
-                <nav id="controls">
-                    <ul>
-                        <li class="start-game">
-                            <button> Start Game</button>
-                        </li>
-                        <li class="Reset-Game">
-                            <button> Reset Game</button>
-                        </li>
-                        <li class="Score">
-                            <a> Score </a>
-                        </li>
-                        <li class="Time Left">
-                            <a> Time Left</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <div class="navbar">
+        <nav id="controls"> 
+            <ul>
+                <li class="start-game"><a href=""> Start Game</a></li>
+                <li class="reset-game"><a href="index.html"> Reset Game</a></li>
+                <li class="score"> Score<span id="score">  0</span></li>
+                <li class="time">Time Left<span id="time-left">0</span></li>
+            </ul>
+        </nav>
     </div>
 
-        <div class="directions">
-            <h2>How to play the Vegan Dragon Game</h2>
-            <p>
-                <ul>
-                    <li>You can control where the Dragon travels with your arrows</li>
-                    <li>Don't Crash into the temple's walls</li>
-                    <li>Keep feeding the dragon with mushrooms so that he stays alive</li>
-                    <li>If he runs into himself he will die and the game will be over</li>
-                </ul>
-                <img src="" alt="" class="">
-            </p>
-        </div>
-                
         
-        <div id="gameboard">
-        </div>
-
+        <div class="directions">
+        <h2>
+            How to play the Vegan Dragon Game
+        </h2>
+        <p>
+            <!--Explain how the game will be played, the rules, win or loss-->
+            <ul>
+                <li>You can control where the Dragon travels with your arrows </li>
+                <li>Don't Crash into the temple's walls</li>
+                <li>Keep feeding the dragon with mushrooms so that he stays alive</li>
+                <li>If he runs into himself he will die and the game will be over</li>
+            </ul>
+            <img src="img/directionalkeypad.png" alt="directional-keypad" class="directional-keypad" >
+        </p>
+    </div>
+    
+    <!--Create a section for the game to be held and played in,
+        an area so that the snake doesnt run off the screen -->
+    <div id="gameboard">
+    </div>
     <footer>
-        <h2> THANK YOU FOR PLAYING</h2>
+        <h2>THANK YOU FOR PLAYING</h2>
     </footer>
-    <script src="index.js"></script>
 </body>
+<script src = "index.js" ></script>
 </html>
+

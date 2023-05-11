@@ -1,0 +1,280 @@
+
+body {
+    background-image: url( ./Assets/Images/charles-postiaux-i9Kfzb9idZo-unsplash.jpg);
+    background-size: cover;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar{
+    border: 2px solid #e7cd93;
+    width: 95%;
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/*.navbar {
+    border: 6px salmon;
+    width: 95%;
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}*/
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: yellow;
+    margin: 10px;
+    font-size: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    color: yellow;
+}
+
+.directions {
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    color: yellow;
+    font-size: 20px;
+}
+
+.directions ul li{
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*create the grid*/
+
+#gameboard{
+    display: grid;
+    box-shadow: 5px 5px 5px 5px red;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    position: relative;
+    border: 10px solid yellow;
+    text-align: center;
+    background-position: center;
+    background-size: 100%;
+    height: 500px;
+    width: 500px;
+}
+
+
+footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: yellow;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+/* Create the Dragon and mushroom*/
+
+.dragon-head, .dragon, .mushroom {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    border: 4px salmon;
+}
+
+.dragon-head{
+    background-color: green;
+    border: 2px greenyellow;
+}
+
+.dragon{
+    border: 2px salmon;
+    background-color: red;
+}
+
+.mushroom{
+    border: 2px white;
+    background-image: radial-gradient(#212121 20%, #e53935 20%);
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*add css to our body*/
+/*body{
+    background-color: #90b18e;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+} */
+
+
+.navbar{
+    border: 2px solid #e7cd93;
+    width: 90%;
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: #e7cd93;
+    margin: 10px;
+    font-size: 25px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #e7cd93;
+    font-size: 25px;
+}
+
+nav ul li a:hover{
+    color: blue;
+    
+}
+
+.snake-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+#gameboard{
+    background-image: url('img/ivan-bandura-n7NxVeTvTag-unsplash.jpg');
+    background-size: 100%;
+    background-position: center;
+    height: 500px;
+    width: 500px ;
+    text-align: center;
+    border:10px solid #e7cd93;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    margin-top: 4px;    
+    display: grid;
+    box-shadow: 5px 5px 5px 5px #595953;
+    /* this assigning grid to display will create it to be like a grid
+    and below is the dimensions, 25 by 25 frames*/
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(25, 1fr);
+}
+
+footer{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: #e7cd93;
+    margin: auto;
+    text-align: center;
+}
+
+.snake-head, .rodent .snake{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    border: 2px solid white;
+}
+.snake{
+    background-color: yellow;
+    border: 2px solid #595953;
+}
+.snake-head{
+    background: linear-gradient(yellow, red);
+}
+.rodent{
+    background-color: gray;
+    border: 2px solid whitesmoke;
+}
+
+
+.directional-keypad{
+    border: 2px solid #e7cd93;
+    width: auto;
+    height: 70px;
+    margin-right: 20px;
+}
+
+.directions{
+    margin-top: 4px;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.directions h2{
+    padding-left: auto;
+    width: auto;
+}
+.directions ul{
+    width: auto;
+}
+.directions ul li {
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    margin: 5px;
+    font-size: 15px;
+
+}
