@@ -42,7 +42,7 @@ nav ul li a{
 }
 
 .directions {
-    margin-top: 10px;
+    margin-top: 4px;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -64,6 +64,14 @@ nav ul li a{
 
 }
 
+.directions h2{
+    padding-left: auto;
+    width: auto;
+}
+.directions ul{
+    width: auto;
+}
+
 /*create the grid*/
 
 #gameboard{
@@ -79,34 +87,12 @@ nav ul li a{
     position: relative;
     border: 10px solid yellow;
     text-align: center;
+    opacity: 2;
     background-position: center;
     background-size: 100%;
     height: 500px;
     width: 500px;
 }
-
-/*#gameboard{
-    background-image: url('img/ivan-bandura-n7NxVeTvTag-unsplash.jpg');
-    background-size: 100%;
-    background-position: center;
-    height: 500px;
-    width: 500px ;
-    text-align: center;
-    border:10px solid #e7cd93;
-    position: relative;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.5;
-    margin-top: 4px;    
-    display: grid;
-    box-shadow: 5px 5px 5px 5px #595953;
-    /* this assigning grid to display will create it to be like a grid
-    and below is the dimensions, 25 by 25 frames*/
-    grid-template-rows: repeat(25, 1fr);
-    grid-template-columns: repeat(25, 1fr);
-}
-
 
 footer{
     align-items: center;
@@ -117,6 +103,7 @@ footer{
     text-align: center;
     margin: auto;
 }
+
 
 /* Create the Dragon and mushroom*/
 
@@ -140,66 +127,13 @@ footer{
 
 .mushroom{
     border: 2px white;
-    background-image: radial-gradient(#212121 20%, #e53935 20%);
+    background-image: radial-gradient(#2whit12121 20%, #e53935 20%);
     height: 100px;
     width: 100px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 *add css to our body*/
-
-
-
-#gameboard{
-    background-image: url('img/ivan-bandura-n7NxVeTvTag-unsplash.jpg');
-    background-size: 100%;
-    background-position: center;
-    height: 500px;
-    width: 500px ;
-    text-align: center;
-    border:10px solid #e7cd93;
-    position: relative;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.5;
-    margin-top: 4px;    
-    display: grid;
-    box-shadow: 5px 5px 5px 5px #595953;
-    /* this assigning grid to display will create it to be like a grid
-    and below is the dimensions, 25 by 25 frames*/
-    grid-template-rows: repeat(25, 1fr);
-    grid-template-columns: repeat(25, 1fr);
-}
-
-footer{
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    color: #e7cd93;
-    margin: auto;
-    text-align: center;
-}
 
 .snake-head, .rodent .snake{
     height: 100%;
@@ -216,32 +150,7 @@ footer{
     background: linear-gradient(yellow, red);
 }
 .rodent{
-    background-color: gray;
+    background-image: radial-gradient(#212121 20%, #e53935 20%);
     border: 2px solid whitesmoke;
 }
 
-
-.directional-keypad{
-    border: 2px solid #e7cd93;
-    width: auto;
-    height: 70px;
-    margin-right: 20px;
-}
-
-.directions{
-    margin-top: 4px;
-    text-align: center;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: auto;
-}
-
-.directions h2{
-    padding-left: auto;
-    width: auto;
-}
-.directions ul{
-    width: auto;
-}
