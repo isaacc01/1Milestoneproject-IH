@@ -1,9 +1,9 @@
-//All the elements being used
-const dragonGameBoard = document.querySelector("#gameboard");
+//Assign all the elements being used
+const snakeGameBoard = document.querySelector("#gameboard");
 const scoreBoard = document.querySelector("#score");
 const startGame = document.getElementsByClassName('start-game');
 
-let dragonPosition = [{ x: 5, y: 6 }]; //Dragon array
+let snakePosition = [{ x: 5, y: 6 }]; //Dragon array
 let inputDirection = { x: 0, y: 0 };
 let speed = 10;
 let score = 0;
@@ -23,16 +23,16 @@ function main(startGame) {
     gamePlay();
 }
 
-//create function in case the dragon collides of bumps into walls
-function didDragonCollide(dragon) {
-    //if the dragon runs into inself
-    for (let i = 1; i < dragonPosition.length; i++) {
-        if (dragon[i].x === dragon[0].x && dragon[i].y === dragon[0].y) {
+//create function in case the snake/dragon collides of bumps into walls
+function didSnakeCollide(snake) {
+    //if the snake runs into inself
+    for (let i = 1; i < snakePosition.length; i++) {
+        if (snake[i].x === snake[0].x && snake[i].y === snake[0].y) {
         return true;
     }
 }
 //when Dragon bumps into wall
-    if (dragon[0].x >= 25 || dragon[0].x <= 0 || dragon[0].y >= 25 || dragon[0].y <= 0){
+    if (snake[0].x >= 25 || snake[0].x <= 0 || snake[0].y >= 25 || snake[0].y <= 0){
         return true;
     }
     return false;
@@ -40,24 +40,24 @@ function didDragonCollide(dragon) {
 
 function gamePlay() {
 //add functions to update the Dragon array when it eats the food
-    if (diddragonCollide(dragonPosition)) {
+    if (didSnakeCollide(snakePosition)) {
     inputDirection = { x: 0, y: 0 };
     alert("GAME OVER!!");
     location.reload()
-    dragonPosition = [{ x: 5, y: 6 }];
+    snakePosition = [{ x: 5, y: 6 }];
     score = 0;
     }
 
-
-//add a if statement for when the dragon eats the food to update the score
+    
+//add a if statement for when the snake/dragon eats the food to update the score
 //and update the dragon length
-    if (dragonPosition[0].y === foodBait.y && dragonPosition[0].x === foodBait.x) {
+    if (snakePosition[0].y === foodBait.y && snakePosition[0].x === foodBait.x) {
        score += 1;
 
         scoreBoard.innerHTML = " " + score;
-        dragonPosition.unshift({
-        x: dragonPosition[0].x + inputDirection.x,
-        y: dragonPosition[0].y + inputDirection.y,
+        snakePosition.unshift({
+        x: snakePosition[0].x + inputDirection.x,
+        y: snakePosition[0].y + inputDirection.y,
         });
 //add mathround to add the food on a random position
         let a = 2;
@@ -74,34 +74,34 @@ function gamePlay() {
     }
     }
 
-    //for loop for moving the dragon
-    for (let i = dragonPosition.length - 2; i >= 0; i--) {
-    dragonPosition[i + 1] = { ...dragonPosition[i] };
+    //for loop for moving the snake
+    for (let i = snakePosition.length - 2; i >= 0; i--) {
+    snakePosition[i + 1] = { ...snakePosition[i] };
     }
 
-    dragonPosition[0].x += inputDirection.x;
-    dragonPosition[0].y += inputDirection.y;
+    snakePosition[0].x += inputDirection.x;
+    snakePosition[0].y += inputDirection.y;
 
 //now time to display the dragon and mushroom on the gameboard
-    dragonGameBoard.innerHTML = "";
-        dragonPosition.forEach((e, index) => {
-        dragonElement = document.createElement("div");
-        dragonElement.style.gridRowStart = e.y;
-        dragonElement.style.gridColumnStart = e.x;
+    snakeGameBoard.innerHTML = "";
+        snakePosition.forEach((e, index) => {
+        snakeElement = document.createElement("div");
+        snakeElement.style.gridRowStart = e.y;
+        snakeElement.style.gridColumnStart = e.x;
 
     if (index === 0) {
-        dragonElement.classList.add("dragon-head");
+        snakeElement.classList.add("snake-head");
     } else {
-        dragonElement.classList.add("dragon");
+        snakeElement.classList.add("snake");
     }
-    dragonGameBoard.appendChild(dragonElement);
+    snakeGameBoard.appendChild(snakeElement);
     });
 
     foodElement = document.createElement("div");
     foodElement.style.gridRowStart = foodBait.y;
     foodElement.style.gridColumnStart = foodBait.x;
-    foodElement.classList.add("mushroom");
-    dragonGameBoard.appendChild(foodElement);
+    foodElement.classList.add("rodent");
+    snakeGameBoard.appendChild(foodElement);
 }
 
 //add controls to the dragon to have it move around the grid
