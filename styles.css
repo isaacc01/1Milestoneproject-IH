@@ -107,7 +107,7 @@ footer{
 
 /* Create the Dragon and mushroom*/
 
-.dragon-head, .dragon, .mushroom {
+.dragon-head, .mushroom, .dragon {
     height: 100%;
     width: 100%;
     opacity: 1;
@@ -115,47 +115,19 @@ footer{
     border: 2px solid white;
 }
 
+.dragon{
+    background: linear-gradient(yellow, red);
+}
+
 .dragon-head{
     background-color: yellow;
     border: 2px solid #595953;
-}
-
-.dragon{
-    background: linear-gradient(yellow, red);
 }
 
 .mushroom{
     background-image: radial-gradient(#212121 20%, #e53935 20%);
     border: 2px solid whitesmoke;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -174,9 +146,5 @@ footer{
 }
 .snake-head{
     background: linear-gradient(yellow, red);
-}
-.rodent{
-    background-image: radial-gradient(#212121 20%, #e53935 20%);
-    border: 2px solid whitesmoke;
 }
 
