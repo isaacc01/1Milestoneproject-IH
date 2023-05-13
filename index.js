@@ -74,7 +74,7 @@ function gamePlay() {
     }
     }
 
-    //for loop for moving the snake
+    //for loop for moving the dragon
     for (let i = snakePosition.length - 2; i >= 0; i--) {
     snakePosition[i + 1] = { ...snakePosition[i] };
     }
