@@ -3,12 +3,13 @@ const snakeGameBoard = document.querySelector("#gameboard");
 const scoreBoard = document.querySelector("#score");
 const startGame = document.getElementsByClassName('start-game');
 
-let snakePosition = [{ x: 5, y: 6 }]; //Dragon array
+//Dragon and foobait array
+let snakePosition = [{ x: 8, y: 10 }]; 
 let inputDirection = { x: 0, y: 0 };
 let speed = 10;
 let score = 0;
 let lastPaintTime = 0;
-let foodBait = { x: 10, y: 10 };
+let foodBait = { x: 15, y: 15 };
 
 
 //setup game function, the main function
@@ -47,10 +48,8 @@ function gamePlay() {
     snakePosition = [{ x: 5, y: 6 }];
     score = 0;
     }
-
     
-//add a if statement for when the snake/dragon eats the food to update the score
-//and update the dragon length
+//add a if statement for when the dragon eats the food to update the score and update the dragon length
     if (snakePosition[0].y === foodBait.y && snakePosition[0].x === foodBait.x) {
        score += 1;
 
