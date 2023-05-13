@@ -112,24 +112,21 @@ footer{
     width: 100%;
     opacity: 1;
     z-index: 1;
-    border: 4px salmon;
+    border: 2px solid white;
 }
 
 .dragon-head{
-    background-color: green;
-    border: 2px greenyellow;
+    background-color: yellow;
+    border: 2px solid #595953;
 }
 
 .dragon{
-    border: 2px salmon;
-    background-color: red;
+    background: linear-gradient(yellow, red);
 }
 
 .mushroom{
-    border: 2px white;
-    background-image: radial-gradient(#2whit12121 20%, #e53935 20%);
-    height: 100px;
-    width: 100px;
+    background-image: radial-gradient(#212121 20%, #e53935 20%);
+    border: 2px solid whitesmoke;
 }
 
 
@@ -164,7 +161,7 @@ footer{
 
 *add css to our body*/
 
-.snake-head, .rodent .snake{
+/*.snake-head, .rodent .snake{
     height: 100%;
     width: 100%;
     opacity: 1;
