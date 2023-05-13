@@ -2,7 +2,7 @@
 
 ## Deployment
 
-The web game is deployed at < https://isaacc01.github.io/1Milestoneproject-IH/>.
+The web game is deployed at <https://isaacc01.github.io/1Milestoneproject-IH/>.
 
 ## Project Description
 
