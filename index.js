@@ -3,7 +3,7 @@ const snakeGameBoard = document.querySelector("#gameboard");
 const scoreBoard = document.querySelector("#score");
 const startGame = document.getElementsByClassName('start-game');
 
-let snakePosition = [{ x: 5, y: 6 }]; //snake array
+let snakePosition = [{ x: 5, y: 6 }]; //Dragon array
 let inputDirection = { x: 0, y: 0 };
 let speed = 10;
 let score = 0;
@@ -23,7 +23,7 @@ function main(startGame) {
     gamePlay();
 }
 
-//create function in case the snake collides of bumps into walls
+//create function in case the snake/dragon collides of bumps into walls
 function didSnakeCollide(snake) {
     //if the snake runs into inself
     for (let i = 1; i < snakePosition.length; i++) {
@@ -31,7 +31,7 @@ function didSnakeCollide(snake) {
         return true;
     }
 }
-//when snake bumps into wall
+//when Dragon bumps into wall
     if (snake[0].x >= 25 || snake[0].x <= 0 || snake[0].y >= 25 || snake[0].y <= 0){
         return true;
     }
@@ -39,7 +39,7 @@ function didSnakeCollide(snake) {
 }
 
 function gamePlay() {
-//add functions to update the snake array when it eats the food
+//add functions to update the Dragon array when it eats the food
     if (didSnakeCollide(snakePosition)) {
     inputDirection = { x: 0, y: 0 };
     alert("GAME OVER!!");
@@ -47,8 +47,10 @@ function gamePlay() {
     snakePosition = [{ x: 5, y: 6 }];
     score = 0;
     }
-//add a if statement for when the snake eats the food to update the score
-//and update thr snake length
+
+    
+//add a if statement for when the snake/dragon eats the food to update the score
+//and update the dragon length
     if (snakePosition[0].y === foodBait.y && snakePosition[0].x === foodBait.x) {
        score += 1;
 
@@ -80,7 +82,7 @@ function gamePlay() {
     snakePosition[0].x += inputDirection.x;
     snakePosition[0].y += inputDirection.y;
 
-//now time to display the snake and food on the gameboard
+//now time to display the dragon and mushroom on the gameboard
     snakeGameBoard.innerHTML = "";
         snakePosition.forEach((e, index) => {
         snakeElement = document.createElement("div");
@@ -102,7 +104,7 @@ function gamePlay() {
     snakeGameBoard.appendChild(foodElement);
 }
 
-//add controls to the snake to have it move around the grid
+//add controls to the dragon to have it move around the grid
 window.requestAnimationFrame(main);
 
 window.addEventListener("keydown", function (e) {
