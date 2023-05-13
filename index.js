@@ -100,7 +100,7 @@ function gamePlay() {
     foodElement = document.createElement("div");
     foodElement.style.gridRowStart = foodBait.y;
     foodElement.style.gridColumnStart = foodBait.x;
-    foodElement.classList.add("rodent");
+    foodElement.classList.add("mushroom");
     snakeGameBoard.appendChild(foodElement);
 }
 
