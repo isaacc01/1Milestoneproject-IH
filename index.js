@@ -40,7 +40,7 @@ function didDragonCollide(dragon) {
 
 function gamePlay() {
 //add functions to update the Dragon array when it eats the food
-    if (didSnakeCollide(dragonPosition)) {
+    if (diddragonCollide(dragonPosition)) {
     inputDirection = { x: 0, y: 0 };
     alert("GAME OVER!!");
     location.reload()
